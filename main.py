@@ -1,14 +1,14 @@
 from kivy.app import App
-from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.button import Button
+from kivy.uix.boxlayout import BoxLayout
 
-class FloatingMenu(App):
+class VIPMenu(App):
     def build(self):
-        layout = FloatLayout()
-        btn = Button(text='Check Status', size_hint=(0.4, 0.1), pos_hint={'x':0.3, 'y':0.5})
-        layout.add_widget(btn)
+        layout = BoxLayout(orientation='vertical')
+        layout.add_widget(Button(text='Auto Headshot: OFF', background_color=(1, 0, 0, 1)))
+        layout.add_widget(Button(text='ESP Name: OFF', background_color=(0, 0, 1, 1)))
+        layout.add_widget(Button(text='Speed Hack: 1x'))
         return layout
 
 if __name__ == '__main__':
-    FloatingMenu().run()
-
+    VIPMenu().run()
