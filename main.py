@@ -12,4 +12,4 @@ class VIPMenu(App):
 
 if __name__ == '__main__':
     VIPMenu().run()
-    
+
